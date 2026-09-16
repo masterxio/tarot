@@ -265,72 +265,13 @@ p {
 .hero-visual {
   display: grid;
   place-items: center;
-  min-height: 26rem;
   width: 100%;
-  overflow: hidden;
 }
 
-.card-stack {
-  position: relative;
-  width: min(22rem, 100%);
-  height: 24rem;
-}
-
-.tarot-card {
-  position: absolute;
-  inset: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 11.5rem;
-  height: 18.5rem;
-  padding: 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background:
-    linear-gradient(180deg, rgba(224, 184, 79, 0.16), transparent 28%),
-    linear-gradient(180deg, #2a1544, #160b24);
-  box-shadow: var(--shadow);
-}
-
-.card-left {
-  left: 0;
-  top: 2.4rem;
-  transform: rotate(-12deg);
-}
-
-.card-right {
-  right: 0;
-  top: 2.4rem;
-  transform: rotate(12deg);
-}
-
-.card-center {
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: 2;
-  border-color: rgba(224, 184, 79, 0.55);
-}
-
-.card-numeral,
-.cover-inner p,
-.cover-inner span {
-  color: var(--gold);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-}
-
-.tarot-card strong,
-.cover-inner strong {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.8rem;
-  line-height: 1.1;
-}
-
-.card-suit {
-  color: var(--mist);
+.hero-photo {
+  width: min(40rem, 100%);
+  height: auto;
+  filter: drop-shadow(0 28px 40px rgba(0, 0, 0, 0.45));
 }
 
 .section {
@@ -407,29 +348,16 @@ details {
 .feature.ivory { border-top: 3px solid var(--ivory); }
 
 .cover {
-  display: grid;
-  place-items: center;
-  min-height: 26rem;
-  padding: 1.5rem;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(224, 184, 79, 0.22), transparent 46%),
-    linear-gradient(180deg, #3a1d5c, #14091f);
+  overflow: hidden;
+  width: min(26rem, 100%);
+  justify-self: center;
+  padding: 0;
+  background: #07040c;
 }
 
-.cover-inner {
-  width: min(16.5rem, 100%);
-  min-height: 22rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.4rem;
-  border: 1px solid var(--gold);
-  border-radius: 1rem;
-  text-align: center;
-}
-
-.cover-inner strong {
-  font-size: 2.6rem;
+.cover-photo {
+  width: 100%;
+  height: auto;
 }
 
 .price {
@@ -544,21 +472,6 @@ summary::-webkit-details-marker {
 
   .mobile-cta {
     display: block;
-  }
-
-  .hero-visual {
-    min-height: 18rem;
-  }
-
-  .card-stack {
-    height: 17.5rem;
-    transform: scale(0.86);
-    transform-origin: center top;
-  }
-
-  .tarot-card {
-    width: 8.6rem;
-    height: 14rem;
   }
 
   .site-footer {
